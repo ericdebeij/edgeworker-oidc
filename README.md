@@ -2,7 +2,6 @@
 This EdgeWorker can be used as a sample or starting point of how to perform IDP integration at the Edge using OpenID Connect to the OneLogin IDP.
 
 To be used as sample code. Lots of topics not implemented yet, amongs others:
-- Nonce
 - Logout
 
 ## Components
