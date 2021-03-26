@@ -3,6 +3,10 @@ This EdgeWorker can be used as a sample or starting point of how to perform IDP 
 
 To be used as sample code. Lots of topics not implemented yet, amongs others:
 - Logout
+- Other IDP providers (like github)
+- More fine-grained authorization
+
+Consider this as sample code, Work In Progress
 
 ## Components
 - Identity Provider, for example OneLogin
