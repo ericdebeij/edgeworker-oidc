@@ -74,12 +74,19 @@ At the application level their needs to be two rules:
          - Redirect /oidc/login?url=urlEncode(URL)
    
 ## Property Manager - oidcsupport
-A second property manager configuration is required to support the EdgeWorker. This configuration can be shared between applications. The rules for this configuration are in oidcsupport_rules.json. As there is an advanced behavior in there, it has to be setup by Professional Services. 
+A second property manager configuration is required to support the EdgeWorker. This configuration can be shared between applications. 
 
+### Proxy to the IDP
 For every IDP an endpoint needs to be configured with its own origin (Forward host header:origin) and the path prefix should be removed.
 - IF path matches /onelogin/*
    - origin: example.onelogin.com (forward host header = origin host header)
    - remove path prefix
+
+### Microservices
+Microservices have to be defined for Akamai specific tasks that have to be performed in an Akamai Configuration.
+- /service/generatetoken (uses header token-key with the secret)
+
+As token generation requires professional services this rule has to be created by your Akamai team.
 
 
 
