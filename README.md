@@ -39,16 +39,19 @@ For the sake of clearity the following example endpoints are used in the documen
    - Example: example.onelogin.com
 
 ## IDP provider
-The application needs to be configured at the IDP provider. In general the following is a result of the configuration at the IDP provider:
+The application needs to be configured at the IDP provider. Example for onelogin:
 1. IDP domain
-   - Example: https://example.onelogin.com
-   - Authentication URL - https://example.onelogin.com/oidc/2/auth
-   - Token URL - https: https://example.onelogin.com/oidc/2/token
-1. IDP application
-   - ClientID (OIDC_CLIENTID)
-   - Client secret (OIDC_SECRET)
+   - Example: https://example.onelogin.com, this will result in the following URL's to be used from the application
+      - Authentication URL - https://example.onelogin.com/oidc/2/auth
+      - Token URL - https: https://example.onelogin.com/oidc/2/token
+1. Application Configuration
    - Login URL - https://application.example.com/oidc/login
-   - Callback URL - https://application.example.com/oidc/callback
+   - Redirect URL - https://application.example.com/oidc/callback
+1. IDP configuration
+   - SSO
+      - ClientID (OIDC_CLIENTID)
+      - Client secret (OIDC_SECRET)
+      - Token Endpoint - Authentication Method: POST
 
 ## EdgeWorker
 Multiple endpoints are defined in the EdgeWorker and needs to be changed in the responseProvider
