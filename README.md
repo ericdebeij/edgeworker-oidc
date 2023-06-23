@@ -1,3 +1,16 @@
+# Update
+This repository is outdated and will no longer be maintained.
+
+For most recent example, please go to the repo https://github.com/ericdebeij/edgeworker-examples
+That is updated for Google IDP, does not require advanced metadata to generate the Akamai Token (thanks Ian) and has additional examples using the new crypto functionality.
+
+Or you can check the variations as build by Ian: https://github.com/IanCassTwo/edgeworker-oidc
+
+---
+
+---
+
+
 # OpenID connect with OneLogin at the Akamai Edge
 This EdgeWorker can be used as a sample or starting point of how to perform IDP integration at the Edge using OpenID Connect to the OneLogin IDP.
 
